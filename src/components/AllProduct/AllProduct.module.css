@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Salsa&display=swap');
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100vw;
+    min-height: 8rem;
+  }
+  .container h3 {
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .feature_container {
+    min-width: 90vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .view_options,
+  .filter_options,
+  .sort_options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .filters_options {
+    display: flex;
+    align-items: center;
+  }
+  .view_options img {
+    width: 3rem;
+    padding: 0.5rem;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  
+  .select_filter,
+  .select_sort {
+    border-radius: 34.145px;
+    text-align: center;
+    font-weight: 800;
+    padding: 7px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .select_filter {
+    outline: none;
+    border: none;
+    background: #d9d9d9;
+    margin: 0 0.5rem;
+    min-width: 150px;
+  }
+  .select_sort {
+    border: 2px solid #e1e1e1;
+    outline: none;
+  }
+  .select_filter option,
+  .select_sort option {
+    z-index: 2;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 800;
+  }
+  /* Responcive Code  */
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 0.4rem;
+      flex-direction: row-reverse;
+    }
+    .filters_options {
+      margin: 0 0.5rem;
+      min-width: 67vw;
+      overflow: auto;
+    }
+    .sort_options {
+      width: 13rem;
+    }
+    .select_filter,
+    .select_sort {
+      border-radius: 10px;
+    }
+    .select_sort {
+      padding: 0.3rem;
+    }
+  }
+  
+  
+  /* Responcive Code  */
+  @media only screen and (max-width: 520px) {
+    .container {
+      padding: 0;
+      gap: 0;
+      margin-bottom: 4rem;
+    }
+  }
+  

@@ -1,0 +1,66 @@
+.bannerContainer{
+    width: 100vw;
+    height: 36vh;
+    display: flex;
+}
+
+.bannerDiv{
+    width: 90vw;
+    height: 100px;
+    min-height: 200px;
+    margin: auto auto;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #7286B4 , #E794CE);
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bannerleft, .bannerright{
+    width: 45vw;
+}
+
+.bannerleft{
+    padding-left: 4rem;
+}
+
+.bannerright img{
+    position: relative;
+    width: 350px;
+    bottom: 41px;
+    left: 230px;
+}
+
+.bannerHeading{
+    font-weight: 500;
+    font-size: 2.7rem;
+    color: #2E0052;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1100px) {
+    .bannerright img{
+        position: relative;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+    .bannerright img{
+        position: relative;
+        left: 100px;
+    }
+    .bannerHeading{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .bannerright img{
+        position: relative;
+        left: 50px;
+    }
+
+    .bannerHeading{
+        font-size: 2.1rem;
+    }
+}
